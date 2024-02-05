@@ -1,3 +1,149 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
 
+.active {
+  color: #FFAE00;
+}
+
+body {
+  background-color: #e7e3e3;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #FFAE00;
+}
+.navbar__search {
+  flex: 1;
+}
+.navbar__add {
+  flex: 1;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+}
+.navbar__search input {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-right: none;
+  border-radius: 10px 0px 0px 10px;
+  background-color: white;
+}
+.navbar__search button {
+  padding: 8px 20px;
+  margin-left: 0px;
+  border: none;
+  border-left: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0C7D74;
+  transition: 0.2s;
+  color: white;
+}
+.navbar__search button:hover {
+  background-color: #048f83;
+}
+
+.navbar__add {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.navbar__add button {
+  color: white;
+  padding: 8px 20px;
+  margin-left: 0px;
+  border: 1px solid #0C7D74;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #0C7D74;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+  transition: 0.2s;
+}
+.navbar__add button:hover {
+  background-color: #048f83;
+  transform: scale(1.1);
+}
+
+.body {
+  display: flex;
+  height: 533px;
+}
+.body__left {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  background-color: #048f83;
+  border-radius: 0px 20px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  gap: 20px;
+}
+.body__left__top {
+  font-size: 35px;
+}
+.body__left__bottom {
+  font-size: 30px;
+}
+.body__left__bottom ul {
+  list-style: circle;
+}
+.body__left__bottom ul li {
+  cursor: pointer;
+}
+.body__left__bottom li:hover {
+  color: #FFAE00;
+  transform: scale(1.1);
+}
+.body__right {
+  flex: 2;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  gap: 20px;
+  max-height: 533px;
+  overflow: auto;
+}
+
+.body__right__user {
+  display: flex;
+  background-color: #FFAE00;
+  height: 150px;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 10px;
+}
+.body__right__user__top {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.body__right__user__top__avatar {
+  height: 100px;
+  height: 100px;
+  border-radius: 40%;
+  background-color: white;
+}
+.body__right__user__bottom {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
