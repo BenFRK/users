@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <section class="navbar">
+    <div class="navbar__search">
+      <input type="text" placeholder="Search">
+      <button><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg></button>
+    </div>
+    <div class="navbar__add">
+      <button>Add <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-playlist-add"
+            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M19 8h-14" />
+            <path d="M5 12h9" />
+            <path d="M11 16h-6" />
+            <path d="M15 16h6" />
+            <path d="M18 13v6" />
+          </svg></span></button>
+    </div>
+  </section>
+  <section class="body">
+    <div class="body__left">
+      <div class="body__left__top">
+        <h3>Users Management</h3>
+      </div>
+      <div class="body__left__bottom">
+        <ul class="body__left__bottom__liste">
+          <li class="body__left__bottom__listes active">All users</li>
+          <li class="body__left__bottom__listes">Recently added</li>
+          <li class="body__left__bottom__listes">All</li>
+          <li class="body__left__bottom__listes">...</li>
+        </ul>
+      </div>
+    </div>
+    <div class="body__right">
+      <div class="body__right__user">
+        <div class="body__right__user__top">
+          <img class="body__right__user__top__avatar" src="user.png" alt="profil">
+        </div>
+        <div class="body__right__user__bottom">
+          <p>Name: <span class="body__right__user__bottom__info">Ben</span></p>
+          <p>Mail: <span class="body__right__user__bottom__info">Ben@gmail.com</span></p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 </body>
+
 </html>
